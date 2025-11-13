@@ -19,7 +19,8 @@ app.use(cookieParser());
 
 
 app.use('/api/auth', authRoutes);
-app.use('/api/product', productRoutes)
+app.use('/api/product', productRoutes);
+app.use('/api/cart', cartRoutes);
 
 app.listen(PORT, () =>{
     console.log(`Server is running on port ${PORT}`);
